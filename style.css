@@ -2,3 +2,9 @@
 .manrope {
 	font-family: "Manrope", sans-serif;
 }
+.header li a {
+	color: #000;
+}
+ul li a {
+	color: #e9e9e9;
+}
