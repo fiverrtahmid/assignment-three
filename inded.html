@@ -13,45 +13,90 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
 	<body class="bg-[#f4f4f4] manrope">
-		<div class="container xl mx-auto">
-			<div class="navbar max-w-[1248px] mx-auto">
-				<div class="navbar-start">
-					<div class="dropdown">
-						<div
-							tabindex="0"
-							role="button"
-							class="btn btn-ghost lg:hidden"
+		<!-- navbar starts here-->
+		<div class="navbar max-w-[1248px] mx-auto flex justify-between">
+			<div class="navbar-start">
+				
+				<a class="btn btn-ghost text-xl"
+					><img src="assets/logo-blck.png" alt=""
+				/></a>
+			</div>
+			<div class="navbar-center hidden lg:flex">
+				<ul class="header menu menu-horizontal px-1">
+					<li><a>Home</a></li>
+					<li><a>Service</a></li>
+					<li><a>Portfolio</a></li>
+					<li><a>Blog</a></li>
+					<li><a>Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="navbar-end justify-end gap-3 items-center">
+				<a class="border hidden md:flex p-1 rounded-full" href=""
+					><svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+						/>
+					</svg>
+				</a>
+				<a class="border hidden md:flex p-1 rounded-full" href=""
+					><svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+						/>
+					</svg>
+				</a>
+				<button
+						class="bg-[#ABEF5F] rounded-full px-5 py-2 flex items-center justify-center gap-3 font-bold capitalize hidden md:flex"
+					>
+						View Details
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="red"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="white"
+							class="size-4 bg-[black] h-[24px] w-[24px] p-1 rounded-full"
 						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="h-5 w-5"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M4 6h16M4 12h8m-8 6h16"
-								/>
-							</svg>
-						</div>
-						<ul
-							tabindex="0"
-							class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow header"
-						>
-							<li><a>Home</a></li>
-							<li><a>Service</a></li>
-							<li><a>Portfolio</a></li>
-							<li><a>Blog</a></li>
-							<li><a>Contact Us</a></li>
-						</ul>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+							/>
+						</svg>
+					</button>
+				<div class="dropdown">
+					<div
+						tabindex="0"
+						role="button"
+						class="btn btn-ghost lg:hidden"
+					>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 border p-1 rounded-full">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+					  </svg>
+					  
 					</div>
-					<a class="btn btn-ghost text-xl"><img src="assets/logo-blck.png" alt=""></a>
-				</div>
-				<div class="navbar-center hidden lg:flex">
-					<ul class="header menu menu-horizontal px-1">
+					<ul
+						tabindex="0"
+						class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 header"
+					>
 						<li><a>Home</a></li>
 						<li><a>Service</a></li>
 						<li><a>Portfolio</a></li>
@@ -59,42 +104,14 @@
 						<li><a>Contact Us</a></li>
 					</ul>
 				</div>
-				<div class="navbar-end gap-5">
-					<a class="border p-1 rounded-full" href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-						<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-					  </svg>
-					  </a>
-					<a class="border p-1 rounded-full" href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-					  </svg>
-					  </a>
-					<button
-				class="bg-[#ABEF5F] rounded-full px-5 py-2 mt-2 flex items-center justify-center gap-3 font-bold capitalize"
-			>
-				Book Consult
-								<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="red"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="white"
-					class="size-4 bg-[black] h-[24px] w-[24px] p-1 rounded-full"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-					/>
-				</svg>
-			</button>
-				</div>
 			</div>
 		</div>
-		<div class="hero min-h-[600px]">
-			<div class="hero-content text-center">
+		<!-- hero / banner area starts here -->
+		<div class="banner min-h-[600px]">
+			<div class="hero-content max-w-[1248px] mx-auto text-center">
 				<div class="max-w-[900px] flex flex-col items-center">
 					<img src="assets/banner.png" alt="" />
-					<h1 class="text-5xl font-extrabold">
+					<h1 class="xl:text-6xl text-4xl font-extrabold">
 						A barn house of this design has a striking appearance
 					</h1>
 					<p class="py-6">
@@ -104,39 +121,36 @@
 						space with natural light.
 					</p>
 					<button
-				class="bg-[#ABEF5F] rounded-full px-5 py-2 mt-2 flex items-center justify-center gap-3 font-bold capitalize"
-			>
-				View Details
-								<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="red"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="white"
-					class="size-4 bg-[black] h-[24px] w-[24px] p-1 rounded-full"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-					/>
-				</svg>
-			</button>
+						class="bg-[#ABEF5F] rounded-full px-5 py-2 mt-2 flex items-center justify-center gap-3 font-bold capitalize"
+					>
+						View Details
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="red"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="white"
+							class="size-4 bg-[black] h-[24px] w-[24px] p-1 rounded-full"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+							/>
+						</svg>
+					</button>
 				</div>
 			</div>
 		</div>
-		<div class="hero py-20">
-			<div class="hero-content flex-col lg:flex-row-reverse">
-				<div class="w-50%">
-					<img
-						src="assets/Rectangle.png"
-						class="w-full rounded-lg shadow-2xl"
-					/>
-				</div>
-				<div class="w-[50%]">
+		<!-- about us area starts here -->
+		<div class="about-us py-20">
+			<div
+				class="hero-content max-w-[1248px] mx-auto flex-col xl:flex-row"
+			>
+				<div class="w-full">
 					<img src="" alt="" />
 					<div class="badge">About Us</div>
-					<h1 class="text-5xl font-bold">
+					<h1 class="xl:text-6xl font-bold text-4xl">
 						We design thoughtful, liveable spaces
 					</h1>
 					<p class="py-6">
@@ -144,37 +158,47 @@
 						assumenda excepturi exercitationem quasi. In deleniti
 						eaque aut repudiandae et a id nisi.
 					</p>
-					<div class="card card-side bg-base-100 shadow-xl px-6">
-						<figure>
-							<img src="assets/commercial.png" alt="Movie" />
-						</figure>
-						<div class="card-body">
-							<h2 class="card-title">Commercial</h2>
-							<p>
-								The barn house captivates with its blend of
-								rustic charm and modern.
-							</p>
+					<div
+						class="card-holder flex flex-col lg:flex-row xl:flex-col gap-4"
+					>
+						<div class="card card-side bg-base-100 shadow-xl px-6">
+							<figure>
+								<img src="assets/commercial.png" alt="Movie" />
+							</figure>
+							<div class="card-body">
+								<h2 class="card-title">Commercial</h2>
+								<p>
+									The barn house captivates with its blend of
+									rustic charm and modern.
+								</p>
+							</div>
+						</div>
+						<div class="card card-side bg-base-100 shadow-xl px-6">
+							<figure>
+								<img src="assets/residential.png" alt="Movie" />
+							</figure>
+							<div class="card-body">
+								<h2 class="card-title">Residential</h2>
+								<p>
+									The barn house captivates with its blend of
+									rustic charm and modern.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="card card-side bg-base-100 shadow-xl px-6 mt-4">
-						<figure>
-							<img src="assets/residential.png" alt="Movie" />
-						</figure>
-						<div class="card-body">
-							<h2 class="card-title">Residential</h2>
-							<p>
-								The barn house captivates with its blend of
-								rustic charm and modern.
-							</p>
-						</div>
-					</div>
+				</div>
+				<div class="w-full">
+					<img
+						src="assets/Rectangle.png"
+						class="w-full h-[385px] xl:h-full object-cover rounded-xl shadow-2xl"
+					/>
 				</div>
 			</div>
 		</div>
 		<!-- state counter starts here -->
-		<div class="counter max-w-[1248px] mx-auto rounded-lg px-4">
+		<div class="counter max-w-[1248px] mx-auto px-4">
 			<div
-				class="counter-container  py-10 bg-white grid md:grid-cols-4 sm:grid-cols-2 text-center md:px-4"
+				class="counter-container py-10 bg-white rounded-lg grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 md:px-4"
 			>
 				<div class="counter-item flex flex-col items-center">
 					<svg
@@ -285,7 +309,9 @@
 					accents.
 				</p>
 			</div>
-			<div class="our-works grid grid-cols-4 gap-5">
+			<div
+				class="our-works grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center gap-5"
+			>
 				<div
 					class="work bg-[#E7C1D3] p-[24px] rounded-lg flex flex-col gap-3"
 				>
@@ -437,68 +463,90 @@
 		</div>
 		<div class="portfolio w-full bg-white pb-20 px-4">
 			<div
-				class="portfolio-container max-w-[1248px] mx-auto grid grid-cols-9 grid-rows-2 gap-4"
+				class="portfolio-container max-w-[1248px] mx-auto grid grid-cols-10 gap-6"
 			>
 				<div
-					class="portfolio-item col-span-6 commercial flex gap-4 items-center p-4 border rounded-[20px]"
+					class="portfolio-item item-1 p-6 border rounded-xl xl:col-start-1 xl:col-end-8 col-span-full"
 				>
-					<img
-						class="w-[260px] h-[179px] object-contian"
-						src="assets/img1.png"
-						alt=""
-					/>
 					<div
-						class="portfolio-detils flex flex-col items-start gap-5"
+						class="item-inner w-full flex md:flex-row flex-col gap-6"
 					>
-						<h3>Commercial</h3>
-						<p>
-							The barn house captivates with its blend of rustic
-							charm and modern. The barn house captivates with its
-							blend of rustic charm and modern .
-						</p>
-						<button>view details</button>
+						<img
+							class="md:w-[260px] md:h-[179px] w-full object-contian"
+							src="assets/img1.png"
+							alt=""
+						/>
+						<div
+							class="portfolio-detils flex flex-col items-start gap-5"
+						>
+							<h3>Commercial</h3>
+							<p>
+								The barn house captivates with its blend of
+								rustic charm and modern. The barn house
+								captivates with its blend of rustic charm and
+								modern .
+							</p>
+							<button>view details</button>
+						</div>
 					</div>
 				</div>
 				<div
-					class="portfolio-item col-span-3 p-4 border rounded-[20px]"
+					class="portfolio-item item-2 p-4 border rounded-[20px] md:col-start-1 md:col-end-6 xl:col-start-8 xl:col-end-11 col-span-full"
 				>
 					<img
-						class="w-full h-[180px] object-cover rounded-[20px]"
+						class="w-full md:h-[180px] object-cover rounded-[20px]"
 						src="assets/img2.png"
 						alt=""
 					/>
 				</div>
 				<div
-					class="portfolio-item col-span-2 p-4 border rounded-[20px]"
+					class="portfolio-item item-3 p-4 border rounded-[20px] md:col-start-6 md:col-end-11 xl:col-start-1 xl:col-end-3 col-span-full"
 				>
 					<img
-						class="w-full h-full object-fill"
+						class="w-full md:h-[180px] object-fill"
 						src="assets/img3.png"
 						alt=""
 					/>
 				</div>
 				<div
-					class="portfolio-item commercial flex gap-4 items-center col-span-5 p-4 border rounded-[20px]"
+					class="portfolio-item item-4 commercial flex gap-4 items-center p-4 border rounded-[20px] col-span-full xl:col-start-3 xl:col-end-9"
 				>
-					<img
-						class="w-[260px] h-[179px] object-contian"
-						src="assets/img4.png"
-						alt=""
-					/>
-					<div class="portfolio-detils">
-						<h3>Commercial</h3>
-						<p>
-							The barn house captivates with its blend of rustic
-							charm and modern. The barn house captivates
-						</p>
-						<button>view details</button>
+					<div
+						class="item-inner w-full flex md:flex-row flex-col gap-6"
+					>
+						<img
+							class="md:w-[260px] md:h-[179px] w-full object-contian"
+							src="assets/img4.png"
+							alt=""
+						/>
+						<div
+							class="portfolio-detils flex flex-col items-start gap-5"
+						>
+							<h3>Commercial</h3>
+							<p>
+								The barn house captivates with its blend of
+								rustic charm and modern. The barn house
+								captivates with its blend of rustic charm and
+								modern .
+							</p>
+							<button>view details</button>
+						</div>
 					</div>
 				</div>
 				<div
-					class="portfolio-item col-span-2 p-4 border rounded-[20px]"
+					class="portfolio-item item-5 p-4 border rounded-[20px] md:col-start-1 md:col-end-6 xl:col-start-9 xl:col-end-11 col-span-full"
 				>
 					<img
-						class="w-full h-full object-fill"
+						class="md:w-[260px] md:h-[179px] w-full object-fill"
+						src="assets/img5.png"
+						alt=""
+					/>
+				</div>
+				<div
+					class="portfolio-item item-6 xl:hidden p-4 border rounded-[20px] md:col-start-6 md:col-end-11 lg:col-start-6 lg:col-end-11 col-span-full"
+				>
+					<img
+						class="md:w-[260px] md:h-[179px] w-full object-fill"
 						src="assets/img5.png"
 						alt=""
 					/>
@@ -537,8 +585,12 @@
 					accents.
 				</p>
 			</div>
-			<div class="news-container py-20 px-4 max-w-[1248px] mx-auto flex-wrap flex gap-5 md:flex-col">
-				<div class="card card-compact bg-base-100 w-96 shadow-xl">
+			<div
+				class="news-container py-20 px-4 max-w-[1248px] mx-auto gap-5 grid grid-col-1 justify-center lg:grid-cols-3"
+			>
+				<div
+					class="card bg-base-100 w-full shadow-xl md:flex-row lg:flex-col flex-col"
+				>
 					<figure>
 						<img
 							class="w-full p-4"
@@ -613,7 +665,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="card card-compact bg-base-100 w-96 shadow-xl">
+				<div
+					class="card card-compact bg-base-100 shadow-xl md:flex-row lg:flex-col flex-col"
+				>
 					<figure>
 						<img
 							class="w-full p-4"
@@ -688,7 +742,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="card card-compact bg-base-100 w-96 shadow-xl">
+				<div
+					class="card card-compact bg-base-100 shadow-xl md:flex-row lg:flex-col flex-col"
+				>
 					<figure>
 						<img
 							class="w-full p-4"
@@ -766,7 +822,10 @@
 			</div>
 		</div>
 		<!-- connect area starts here -->
-		<div class="connect-area">
+		<div
+			class="connect-area py-20 bg-no-repeat bg-cover border-8 border-white"
+			style="background-image: url(assets/bg.jpg)"
+		>
 			<div
 				class="our-works-top max-w-[678px] mx-auto gap-4 text-center flex flex-col items-center"
 			>
@@ -799,26 +858,28 @@
 			</div>
 			<div class="contat-form max-w-[970px] mx-auto py-20 px-5">
 				<form>
-					<div class="input-area grid grid-cols-2 gap-4">
+					<div
+						class="input-area grid md:grid-cols-2 grid-col-1 gap-4"
+					>
 						<input
 							type="text"
 							placeholder="First Name"
-							class="w-50% py-3 px-4 rounded-2xl"
+							class="md:w-50% py-3 px-4 rounded-2xl w-full"
 						/>
 						<input
 							type="text"
 							placeholder="Last Name"
-							class="w-50% py-3 px-4 rounded-2xl"
+							class="md:w-50% py-3 px-4 rounded-2xl w-full"
 						/>
 						<input
 							type="tel"
 							placeholder="Phone Number"
-							class="w-50% py-3 px-4 rounded-2xl"
+							class="md:w-50% py-3 px-4 rounded-2xl w-full"
 						/>
 						<input
 							type="email"
 							placeholder="Email Number"
-							class="w-50% py-3 px-4 rounded-2xl"
+							class="md:w-50% py-3 px-4 rounded-2xl w-full"
 						/>
 					</div>
 					<textarea
@@ -851,46 +912,46 @@
 			</div>
 		</div>
 		<!-- footer area starts here -->
-		<footer class="footer flex flex-col bg-stone-800 py-20">
-			<div
-				class="our-works-top max-w-[600px] mx-auto gap-4 text-center flex flex-col items-center"
-			>
-				<span class="">
-					<img src="assets/logo.png" alt=""></span
-				>
-				<p class="text-[#737373] mt-4">
-					The barn house captivates with its blend of rustic charm and
-					modern sophistication, featuring weathered wood, sleek metal
-					accents.
-				</p>
-			</div>
-			<div class="navbar max-w-[600px] mx-auto">
-					<ul class="flex justify-between w-full">
-						<li><a>Home</a></li>
-						<li><a>Service</a></li>
-						<li><a>Portfolio</a></li>
-						<li><a>Blog</a></li>
-						<li><a>Contact Us</a></li>
-					</ul>
-				</div>
-			</div>
-			<button class="bg-[#ABEF5F] rounded-full px-5 py-2 mt-2 flex items-center justify-center gap-3 font-bold capitalize mx-auto">
-				send mail
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="red"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="white"
-					class="size-4 bg-[black] h-[24px] w-[24px] p-1 rounded-full"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-					/>
-				</svg>
-			</button>
-		</footer>
+<footer class="footer flex flex-col bg-stone-800 py-20">
+    <div
+        class="our-works-top max-w-[600px] mx-auto gap-4 text-center flex flex-col items-center"
+    >
+        <span class="">
+            <img src="assets/logo.png" alt=""></span
+        >
+        <p class="text-[#737373] mt-4">
+            The barn house captivates with its blend of rustic charm and
+            modern sophistication, featuring weathered wood, sleek metal
+            accents.
+        </p>
+    </div>
+    <div class="navbar max-w-[600px] mx-auto">
+            <ul class="flex justify-between w-full">
+                <li><a>Home</a></li>
+                <li><a>Service</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <button class="bg-[#ABEF5F] rounded-full px-5 py-2 mt-2 flex items-center justify-center gap-3 font-bold capitalize mx-auto">
+        send mail
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="red"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="white"
+            class="size-4 bg-[black] h-[24px] w-[24px] p-1 rounded-full"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+        </svg>
+    </button>
+</footer>
 	</body>
 </html>
